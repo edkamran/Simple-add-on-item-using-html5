@@ -8,10 +8,10 @@
     <script>
 
       function addItem() {
-        var newItem = document.createElement("div");
-        newItem.innerHTML = document.getElementById("box").value;
-        newItem.onclick= removeItem;
-        document.getElementById("list").appendChild(newItem);
+        var items = document.createElement("div");
+        items.innerHTML = document.getElementById("box").value;
+        items.onclick= removeItem;
+        document.getElementById("list").appendChild(items);
       }
 
       function removeItem() {
